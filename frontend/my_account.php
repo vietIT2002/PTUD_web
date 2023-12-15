@@ -83,27 +83,27 @@
                                 <tr>
                                     <td>Họ tên</td>
                                     <td><div class="form-group">
-								<input class="input" type="text" name="name" placeholder="Nhập họ tên" value="<?=$info['ten_kh']?>">
+								<input class="input" type="text" name="name" placeholder="Nhập họ tên" value="<?=$info['ten_kh']?>" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')">
 							</div></td>
                                 </tr>
                                 <tr>
                                     <td>Số điện thoại</td>
                                     <td><div class="form-group">
-								<input class="input" type="tel" id="sdt" name="tel" placeholder="Nhập số điện thoại" value="<?=$info['phone']?>" onchange="checkPhone();">
+								<input class="input" type="tel" id="sdt" name="tel" placeholder="Nhập số điện thoại" value="<?=$info['phone']?>" pattern="0[0-9]{9}" title="Số điện thoại không hợp lệ (bắt đầu bằng 0 và có 10 chữ số)" onchange="checkPhone();" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')">
 								<div style="color:red;" id="thongbaoloisdt"></div>
 							</div></td>
                                 </tr>
                                 <tr>
                                     <td>Email</td>
                                     <td><div class="form-group">
-								<input class="input" type="email" name="email" placeholder="Nhập Email" value="<?=$info['email']?>">
+									<input class="input" type="email" id="email" name="email" placeholder="Nhập email" value="<?=$info['email']?>" required>
 							</div></td>
                                 </tr>
                                 <tr>
                                     <td>Địa chỉ</td>
                                     <td>
                                     <div class="form-group">
-								<input class="input" type="text" name="address" placeholder="Nhập địa chỉ" value="<?=$info['dia_chi']?>">
+									<input class="input" type="text" name="address" placeholder="Nhập địa chỉ" value="<?=$info['dia_chi']?>" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')">
 							</div>
                                     </td>
                                 </tr>

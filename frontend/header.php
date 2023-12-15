@@ -71,7 +71,7 @@
 										}
 										?>
 									</select>
-									<input class="input" name="search" placeholder="Tên sản phẩm......" required>
+									<input class="input" name="search" placeholder="Tên sản phẩm......" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')"/>
 									<button class="search-btn" style="border-radius:0px 50px 50px 0px;">Tìm</button>
 								</form>
 							</div>

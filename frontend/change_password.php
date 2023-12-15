@@ -195,13 +195,13 @@
             </div>
                         
             <div class="form-group">
-                <input class="change-password-input" type='password' name='old_password' placeholder="Mật khẩu cũ" required />
+                <input class="change-password-input" type='password' name='old_password' placeholder="Mật khẩu cũ" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')"/>
             </div>
             <div class="form-group">
-                <input class="change-password-input" type='password' name='new_password' placeholder="Mật khẩu mới" required />
+                <input class="change-password-input" type='password' name='new_password' placeholder="Mật khẩu mới" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')"/>
             </div>
             <div class="form-group">
-                <input class="change-password-input" type='password' name='confirm_password' placeholder="Xác nhận mật khẩu mới" required />
+                <input class="change-password-input" type='password' name='confirm_password' placeholder="Xác nhận mật khẩu mới" required oninvalid="this.setCustomValidity('Vui lòng nhập thông tin')" oninput="setCustomValidity('')"/>
             </div>
                 <input class="change-password-button" type='submit' name="doimatkhau" value='Đổi mật khẩu' />
                 <a href="index.php" class="btn btn-primary">Thoát</a>
